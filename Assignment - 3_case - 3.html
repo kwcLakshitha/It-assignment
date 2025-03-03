@@ -7,49 +7,101 @@
 
   <style>
 
+
+    body {
+      overflow-x: hidden;
+      width: 100vw;
+      height: 100vh;
+
+    }
+    .fixed1 {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 200px;
+      height: 200px;
+      background: transparent;
+      border: 10px solid red;
+      border-radius: 100%;
+      outline: 10px solid gray;
+    }
+
     section {
       width: 100vw;
-      height: 50vw;
+      height: 100vh;
       position: relative;
     }
     section > div {
-      width: 200px;
-      height: 200px;
-      background-color: purple;
+      width: 215px;
+      height: 215px;
       position: absolute;
       left: 0;
       right: 0;
       top: 0;
       bottom: 0;
       margin: auto;
-      border: 10px solid red;
-      outline: 10px solid darkgray;
       border-radius: 100%;
 
     }
 
-    div > h1 {
-      width: 21px;
-      height: 21px;
-      color: white;
-      position: fixed;
-      left: 0;
-      right: 0;
+    #st {
+      background-color: purple;
+    }
+
+    #nd {
+      background-color: deepskyblue;
+    }
+
+    #rd {
+      background-color: darkorange;
+    }
+
+    .text {
+
+      position: absolute;
       top: 0;
       bottom: 0;
+      left: 0;
+      right: 0;
       margin: auto;
+      width: fit-content;
+      height: fit-content;
+      color: white;
+      font-size: 30px;
       font-family: sans-serif;
+
     }
+
+
   </style>
 </head>
 <body>
 
 <section>
-  <div>
-    <h1>Hello</h1>
+  <div id="st">
+    <div class="text">Hello</div>
+
   </div>
 </section>
 
+<section>
+  <div id="nd">
+    <div class="text">Welcome to</div>
+
+  </div>
+</section>
+
+<section>
+  <div id="rd">
+    <div class="text">IJSE</div>
+
+  </div>
+</section>
+
+  <div class="fixed1"></div>
 
 </body>
 </html>
